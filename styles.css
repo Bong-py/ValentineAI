@@ -1,0 +1,128 @@
+:root {
+  --bg: #fff6fb;
+  --card: #ffffff;
+  --text: #44223e;
+  --accent: #ff4f88;
+  --accent-dark: #ea1e68;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #ffe3f2, var(--bg));
+  color: var(--text);
+}
+
+.page {
+  width: min(900px, 92vw);
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 28px rgba(255, 79, 136, 0.12);
+}
+
+.hero {
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffe3f0;
+  color: var(--accent-dark);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  margin: 0.2rem 0 1rem;
+  color: #6a3a5f;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 0;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.yes {
+  background: var(--accent);
+  color: white;
+}
+
+.btn.no {
+  background: #ffd6e8;
+  color: var(--accent-dark);
+}
+
+.response {
+  min-height: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-top: 0.8rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.photo-card {
+  border: 2px solid #ffd6e8;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-card p {
+  margin: 0;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.95rem;
+}
+
+.upload {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 2px dashed #f0a3c1;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.9rem;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+}
+
+.upload input {
+  display: none;
+}
