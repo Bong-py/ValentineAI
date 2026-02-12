@@ -3,30 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Will You Be My Valentine? 💘</title>
+    <title>Be My Valentine 💌</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page page-home">
-      <section class="hero">
-        <p class="eyebrow">Special Delivery 💌</p>
-        <h1>Will you be my Valentine?</h1>
-        <p class="subtitle">Careful: the <strong>No</strong> button is emotionally unavailable and physically unstable.</p>
-
+    <main class="page">
+      <section class="card hero">
+        <p class="tag">Valentine's Day</p>
+        <h1>Will you be my Valentine? 💘</h1>
+        <p class="subtitle">
+          I made this tiny site just for you. Add your favorite pictures and make it yours.
+        </p>
         <div class="actions">
-          <a class="btn yes" href="romantic.html" id="yesBtn">Yes, of course 💖</a>
-          <button class="btn no" type="button" id="noBtn">No 😶</button>
+          <button type="button" class="btn yes" id="yesBtn">Yes 💖</button>
+          <button type="button" class="btn no" id="noBtn">No 🙈</button>
         </div>
-        <p id="teaseText" class="tease" aria-live="polite"></p>
+        <p class="response" id="responseText" aria-live="polite"></p>
       </section>
 
-      <section class="photo-strip" aria-label="Valentine memory photos">
-        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=900&q=80" alt="Heart-shaped lights" /></figure>
-        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80" alt="Couple holding hands" /></figure>
-        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80" alt="Romantic dinner table" /></figure>
-        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?auto=format&fit=crop&w=900&q=80" alt="Bouquet of roses" /></figure>
-        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=80" alt="Coffee date setup" /></figure>
-        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=900&q=80" alt="Sunset heart shape" /></figure>
+      <section class="card">
+        <h2>Our picture wall 📸</h2>
+        <p class="subtitle">
+          Replace the image paths in <code>script.js</code> or upload temporary pictures below.
+        </p>
+        <div id="gallery" class="gallery"></div>
+      </section>
+
+      <section class="card">
+        <h2>Try your own pictures</h2>
+        <p class="subtitle">Pick images from your computer to preview them instantly.</p>
+        <label class="upload">
+          <span>Choose pictures</span>
+          <input id="uploadInput" type="file" accept="image/*" multiple />
+        </label>
+        <div id="uploadPreview" class="gallery"></div>
       </section>
     </main>
 
