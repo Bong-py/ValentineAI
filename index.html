@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine? 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-hearts" id="bgHearts"></div>
+    <div class="particles" id="particles"></div>
+
+    <main class="app">
+      <section id="proposal" class="view active">
+        <p class="line line-1">Hey sefu… 💕</p>
+        <p class="line line-2">I have something very important to ask you…</p>
+        <h1 class="line line-3">Will you be my Valentine? 🌹</h1>
+
+        <div class="actions">
+          <button id="yesBtn" class="btn yes">💗 YES</button>
+          <button id="noBtn" class="btn no">😢 NO</button>
+        </div>
+
+        <p id="hintText" class="hint" aria-live="polite"></p>
+        <p id="countdown" class="countdown"></p>
+      </section>
+
+      <section id="reveal" class="view" aria-hidden="true">
+        <div class="reveal-card">
+          <p id="typedText" class="typed"></p>
+          <h2>Happy Valentine’s Day, My Love 💖</h2>
+
+          <div class="polaroids">
+            <figure class="polaroid"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80" alt="Romantic date table" /></figure>
+            <figure class="polaroid"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=80" alt="Coffee date" /></figure>
+            <figure class="polaroid"><img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=900&q=80" alt="Heart shape at sunset" /></figure>
+          </div>
+
+          <button id="replayBtn" class="btn yes replay">Replay Proposal</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>Made with too much love ❤️ by Siddharth</footer>
+
+    <audio id="bgMusic" loop autoplay src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-piano-114146.mp3"></audio>
+    <audio id="beatSound" preload="auto" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_f130f30ed4.mp3?filename=heartbeat-110624.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
