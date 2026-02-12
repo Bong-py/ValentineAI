@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine 💌</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card hero">
+        <p class="tag">Valentine's Day</p>
+        <h1>Will you be my Valentine? 💘</h1>
+        <p class="subtitle">
+          I made this tiny site just for you. Add your favorite pictures and make it yours.
+        </p>
+        <div class="actions">
+          <button type="button" class="btn yes" id="yesBtn">Yes 💖</button>
+          <button type="button" class="btn no" id="noBtn">No 🙈</button>
+        </div>
+        <p class="response" id="responseText" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2>Our picture wall 📸</h2>
+        <p class="subtitle">
+          Replace the image paths in <code>script.js</code> or upload temporary pictures below.
+        </p>
+        <div id="gallery" class="gallery"></div>
+      </section>
+
+      <section class="card">
+        <h2>Try your own pictures</h2>
+        <p class="subtitle">Pick images from your computer to preview them instantly.</p>
+        <label class="upload">
+          <span>Choose pictures</span>
+          <input id="uploadInput" type="file" accept="image/*" multiple />
+        </label>
+        <div id="uploadPreview" class="gallery"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
